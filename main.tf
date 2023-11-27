@@ -86,7 +86,7 @@ resource "azurerm_virtual_machine" "main" {
   }
 
   provisioner "file" {
-    source      = "./puppet/role/rabbitmq.pp"
+    source      = "/puppet/role/rabbitmq.pp"
     destination = "/etc/puppetlabs/code/environments/production/manifests/rabbitmq.pp"
   }
 
